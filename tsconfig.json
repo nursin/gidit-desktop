@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "types": ["vite/client", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["renderer/src/*"]
+    }
+  },
+  "include": [
+    "renderer/**/*.ts",
+    "renderer/**/*.tsx",
+    "app/electron/**/*.ts",
+    "app/electron/**/*.tsx",
+    "types.d.ts"
+, "src/ai/flows/analyze-image-for-gallery.ts", "src/ai/dev.ts", "src/ai/flows/generate-forgetting-suggestions.ts", "src/ai/flows/generate-react-component.ts", "src/ai/flows/generate-session-recap.ts", "src/ai/flows/organize-notes.ts", "src/ai/flows/triageBrainDump.ts", "src/ai/flows/extractReceiptData.ts", "src/ai/flows/generate-health-summary.ts", "src/services/assistantService.ts", "src/ai/flows/extractDocumentDetails.ts", "src/ai/flows/generate-flashcards.ts", "src/ai/flows/sbar-synthesizer.ts"  ],
+  "exclude": ["node_modules", "dist", "out"]
+}

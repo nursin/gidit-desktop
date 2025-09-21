@@ -1,0 +1,173 @@
+# Node / package manager
+node_modules/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-error.log
+package-lock.json
+.pnpm-store/
+.pnp.*
+.vscode-test/
+
+# Vite / build outputs
+dist/
+build/
+.idea/
+.out/
+*.local
+*.log
+
+# Electron build outputs
+release/
+dist_electron/
+dist-mac/
+out/
+*.AppImage
+*.exe
+*.msi
+*.dmg
+*.zip
+alpha-build/
+electron-builder.yaml
+build/**/*
+
+# TypeScript build artifacts
+*.tsbuildinfo
+lib/
+es/
+types/
+
+# Next.js leftovers (not used but safe to ignore)
+.next/
+out/
+.vercel/
+.vercel_build_output/
+
+# Environment & secrets
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.envrc
+
+# Local DBs, credentials, migrations output and secrets
+# (We store credentials & app DB locally — must NOT be committed)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sql
+*.sql.gz
+*.dump
+/app/electron/db/*
+/app/electron/*.db
+/app/electron/*.sqlite
+/app/electron/*.sqlite3
+
+# SQLCipher/keys/IPC artifacts and export files
+*.key
+*.pem
+*.p12
+secrets/
+credentials.json
+
+# Python artifacts (for Python scripts used by Electron)
+venv/
+.venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ollama / local model artifacts
+models/
+ollama-data/
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+
+# Logs, temp files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log
+lerna-debug.log*
+/tmp/
+/temp/
+*.tmp
+
+# Coverage reports
+coverage/
+coverage-*.json
+lcov-report/
+
+# Test outputs & cache
+.vitest/
+.jest/
+test-results/
+.cache/
+.cache-loader/
+jest.config.ts
+nyc_output/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~ 
+.nfs*
+
+# Native build artifacts
+build/Release/
+build/Debug/
+*.node
+*.o
+*.obj
+
+# Generated Tailwind / PostCSS artifacts
+.postcssrc.js
+.tailwindcss/
+*.css.map
+
+# Rollup/Vite cache
+.rpt2_cache/
+dist-ssr/
+.svelte-kit/
+
+# Misc
+coverage/
+*.seed
+*.pid
+*.seed
+*.bak
+*.orig
+
+# Ignore platform-specific Electron user data caches (should be ephemeral)
+user-data/
+cache/
+storage/
